@@ -1,0 +1,23 @@
+{
+  "name": "angrybirds",
+  "version": "1.0.0",
+  "description": "game with friend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pixels-inc/angryBirds.git"
+  },
+  "keywords": [
+    "angry",
+    "birds"
+  ],
+  "author": "pixels inc.",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/pixels-inc/angryBirds/issues"
+  },
+  "homepage": "https://github.com/pixels-inc/angryBirds#readme"
+}
