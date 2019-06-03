@@ -1,11 +1,11 @@
-var birdRadius = 10;
-
+const birdRadius = 10;
+const birdsCount = 5;
 var birds = [];
 var sling;
 
 function setup() {
   createCanvas(600, 600);
-  for (let i = 0; i < 5; ++i) {
+  for (let i = 0; i < birdsCount; ++i) {
     birds.push(new Bird(i * birdRadius * 3 + birdRadius, height / 2 - birdRadius, birdRadius));
   }
 
@@ -13,10 +13,12 @@ function setup() {
 }
 
 function draw() {
+  //drawing the background and the sling
   background(0);
   sling.show();
 
-  let isSlingEmpty = true;
+    let isSlingEmpty = true;
+    //drawing the birds
   for (let bird of birds) {
     if (bird.isHeld) {
       bird.setPos(sling.pos.x, sling.pos.y);
